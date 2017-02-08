@@ -5,5 +5,39 @@ package codewizards.com.ua.gallery.model;
  */
 
 public class Image {
+    private String url;
+    private long date;
+    private String name;
+
+    public Image(String url, String name, long date) {
+        this.url = url;
+        this.name = name;
+        this.date = date;
+    }
+
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
+    }
+
+    public long getDate() {
+        return date;
+    }
+
+    public void setDate(long date) {
+        this.date = date;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
 
 }
