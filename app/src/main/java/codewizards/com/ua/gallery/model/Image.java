@@ -6,8 +6,8 @@ package codewizards.com.ua.gallery.model;
 
 public class Image {
     private String url;
-    private long date;
     private String name;
+    private long date;
 
     public Image(String url, String name, long date) {
         this.url = url;
@@ -39,5 +39,12 @@ public class Image {
         this.name = name;
     }
 
-
+    @Override
+    public String toString() {
+        return "Image{" +
+                "url='" + url + '\'' +
+                ", name='" + name + '\'' +
+                ", date=" + date +
+                '}';
+    }
 }

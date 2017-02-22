@@ -1,4 +1,4 @@
-package codewizards.com.ua.gallery.ui.fragments;
+package codewizards.com.ua.gallery.sections;
 
 import android.support.v4.app.Fragment;
 

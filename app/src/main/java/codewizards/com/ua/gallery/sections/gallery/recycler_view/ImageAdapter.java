@@ -1,4 +1,4 @@
-package codewizards.com.ua.gallery.ui.fragments.gallery.recycler_view;
+package codewizards.com.ua.gallery.sections.gallery.recycler_view;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -15,13 +15,20 @@ import java.util.List;
 
 import codewizards.com.ua.gallery.R;
 import codewizards.com.ua.gallery.model.Image;
+import codewizards.com.ua.gallery.sections.gallery.OnImageSelectedListener;
 
 /**
  * Created by Интернет on 19.01.2017.
  */
 
 public class ImageAdapter extends RecyclerView.Adapter<ImageAdapter.ImageViewHolder>{
-    List<Image> imageList;
+    private List<Image> imageList;
+    private OnImageSelectedListener listener;
+
+    public ImageAdapter(OnImageSelectedListener listener) {
+        this.listener = listener;
+    }
+
     public void setImageList(List<Image> imageList) {
         this.imageList = imageList;
     }
@@ -38,7 +45,7 @@ public class ImageAdapter extends RecyclerView.Adapter<ImageAdapter.ImageViewHol
 
     @Override
     public int getItemCount() {
-        return imageList.size();
+        return imageList != null ? imageList.size() : 0;
     }
 
     class ImageViewHolder extends RecyclerView.ViewHolder {
@@ -54,13 +61,20 @@ public class ImageAdapter extends RecyclerView.Adapter<ImageAdapter.ImageViewHol
         }
 
         public void init() {
-            Image image = imageList.get(getAdapterPosition());
+            final Image image = imageList.get(getAdapterPosition());
             Glide.with(ivPic.getContext()).load(image.getUrl()).into(ivPic);
             tvTitle.setText(image.getName());
             Date date = new Date(image.getDate());
             SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd-hh.mm.ss");
             tvDate.setText(simpleDateFormat.format(date));
 
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Image img = imageList.get(getAdapterPosition());
+                    listener.onImageSelected(img);
+                }
+            });
         }
 
     }
