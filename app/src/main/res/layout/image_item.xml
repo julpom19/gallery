@@ -13,12 +13,15 @@
         <ImageView
             android:id="@+id/ivPic"
             android:layout_width="match_parent"
-            android:layout_height="200dp"
+            android:layout_height="180dp"
             android:scaleType="centerCrop" />
         <TextView
             android:id="@+id/tvTitle"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:maxLines="1"
+            android:ellipsize="marquee"/>
         <TextView
             android:id="@+id/tvDate"
             android:layout_width="match_parent"

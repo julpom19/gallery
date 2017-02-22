@@ -31,12 +31,6 @@ public class GalleryFragmentPresenter {
     public void update() {
         Log.d(TAG, "update");
         images = StorageHelper.getAllImages(context);
-        for (int i = 0; i < images.size(); i++) {
-            Log.d(TAG, i + ") image: " + images.get(i));
-            if(images.get(i) == null) {
-                Log.d(TAG, "image NULL: " + i);
-            }
-        }
         view.onImagesUpdated(images);
     }
 

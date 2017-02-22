@@ -65,7 +65,7 @@ public class ImageAdapter extends RecyclerView.Adapter<ImageAdapter.ImageViewHol
             Glide.with(ivPic.getContext()).load(image.getUrl()).into(ivPic);
             tvTitle.setText(image.getName());
             Date date = new Date(image.getDate());
-            SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd-hh.mm.ss");
+            SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd hh:mm");
             tvDate.setText(simpleDateFormat.format(date));
 
             itemView.setOnClickListener(new View.OnClickListener() {
