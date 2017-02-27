@@ -1,15 +1,18 @@
-package codewizards.com.ua.gallery.model;
+package codewizards.com.ua.gallery.model.ui;
 
 /**
  * Created by Интернет on 19.01.2017.
  */
 
-public class Image {
+public class GalleryImage {
     private String url;
     private String name;
     private long date;
+    private boolean isFavorite;
 
-    public Image(String url, String name, long date) {
+    public GalleryImage() {}
+
+    public GalleryImage(String url, String name, long date) {
         this.url = url;
         this.name = name;
         this.date = date;
@@ -39,9 +42,33 @@ public class Image {
         this.name = name;
     }
 
+    public boolean isFavorite() {
+        return isFavorite;
+    }
+
+    public void setFavorite(boolean favorite) {
+        isFavorite = favorite;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        GalleryImage image = (GalleryImage) o;
+
+        return url != null ? url.equals(image.url) : image.url == null;
+
+    }
+
+    @Override
+    public int hashCode() {
+        return url != null ? url.hashCode() : 0;
+    }
+
     @Override
     public String toString() {
-        return "Image{" +
+        return "GalleryImage{" +
                 "url='" + url + '\'' +
                 ", name='" + name + '\'' +
                 ", date=" + date +

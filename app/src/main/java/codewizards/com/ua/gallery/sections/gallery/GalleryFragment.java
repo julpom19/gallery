@@ -14,20 +14,25 @@ import android.view.ViewGroup;
 import java.util.List;
 
 import codewizards.com.ua.gallery.R;
-import codewizards.com.ua.gallery.model.Image;
-import codewizards.com.ua.gallery.sections.BaseFragment;
-import codewizards.com.ua.gallery.sections.gallery.recycler_view.ImageAdapter;
+import codewizards.com.ua.gallery.model.ui.GalleryImage;
+import codewizards.com.ua.gallery.mvp.PresenterCache;
+import codewizards.com.ua.gallery.mvp.PresenterFactory;
+import codewizards.com.ua.gallery.sections.abs.BaseFragment;
+import codewizards.com.ua.gallery.sections.ui.ImageAdapter;
+import codewizards.com.ua.gallery.util.Const;
 import codewizards.com.ua.gallery.util.IntentHelper;
 
 /**
  * Created by Интернет on 19.01.2017.
  */
 
-public class GalleryFragment extends BaseFragment implements OnImageSelectedListener {
+public class GalleryFragment extends BaseFragment implements OnImageActionListener {
     private static final String TAG = "GalleryFragment";
     private RecyclerView rvImages;
     ImageAdapter imageAdapter;
+
     GalleryFragmentPresenter presenter;
+    PresenterFactory<GalleryFragmentPresenter> factory = GalleryFragmentPresenter::new;
 
     @Nullable
     @Override
@@ -43,20 +48,30 @@ public class GalleryFragment extends BaseFragment implements OnImageSelectedList
         imageAdapter = new ImageAdapter(this);
         rvImages.setAdapter(imageAdapter);
         rvImages.setLayoutManager(new GridLayoutManager(getActivity(), 2));
-        presenter = new GalleryFragmentPresenter();
+        presenter = PresenterCache.get().getPresenter(Const.PRESENTER_GALLERY_FRAGMENT, factory);
         presenter.init(this, getActivity());
         presenter.update();
         setHasOptionsMenu(true);
     }
 
-    public void onImagesUpdated(List<Image> images) {
+    public void onImagesUpdated(List<GalleryImage> images) {
         imageAdapter.setImageList(images);
         imageAdapter.notifyDataSetChanged();
     }
 
     @Override
-    public void onImageSelected(Image image) {
+    public void onImageSelected(GalleryImage image) {
         IntentHelper.openPictureActivity(getActivity(), image.getUrl());
+    }
+
+    @Override
+    public void onImageFavorite(GalleryImage image) {
+        presenter.addToFavorite(image);
+    }
+
+    @Override
+    public void onImageUnfavorite(GalleryImage image) {
+        presenter.removeFromFavorites(image);
     }
 
     @Override

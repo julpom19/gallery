@@ -3,7 +3,7 @@ package codewizards.com.ua.gallery.util;
 import android.app.Activity;
 import android.content.Intent;
 
-import codewizards.com.ua.gallery.sections.PictureActivity;
+import codewizards.com.ua.gallery.sections.picture.PictureActivity;
 
 /**
  * Created by User on 22.02.2017.

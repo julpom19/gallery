@@ -1,4 +1,4 @@
-package codewizards.com.ua.gallery.sections;
+package codewizards.com.ua.gallery.sections.picture;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;

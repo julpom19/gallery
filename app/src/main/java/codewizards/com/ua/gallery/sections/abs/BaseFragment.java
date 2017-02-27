@@ -1,4 +1,4 @@
-package codewizards.com.ua.gallery.sections;
+package codewizards.com.ua.gallery.sections.abs;
 
 import android.support.v4.app.Fragment;
 

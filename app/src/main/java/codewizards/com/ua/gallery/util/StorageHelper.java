@@ -9,14 +9,14 @@ import android.util.Log;
 import java.util.ArrayList;
 import java.util.List;
 
-import codewizards.com.ua.gallery.model.Image;
+import codewizards.com.ua.gallery.model.ui.GalleryImage;
 
 /**
  * Created by madless on 08.02.2017.
  */
 public class StorageHelper {
-    static public List<Image> getAllImages(Context context) {
-        List<Image> imageList = new ArrayList<>();
+    static public List<GalleryImage> getAllImages(Context context) {
+        List<GalleryImage> imageList = new ArrayList<>();
         // which image properties are we querying
         String[] projection = new String[] {
                 MediaStore.Images.Media._ID,
@@ -58,7 +58,7 @@ public class StorageHelper {
                 date = cur.getLong(dateColumn);
                 name = cur.getString(nameColumn);
                 data = cur.getString(dataColumn);
-                imageList.add(new Image(data, name, date));
+                imageList.add(new GalleryImage(data, name, date));
 
                 // Do something with the values.
                 Log.i("ListingImages", " bucket=" + bucket
