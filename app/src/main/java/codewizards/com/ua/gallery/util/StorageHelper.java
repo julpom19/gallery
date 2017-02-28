@@ -21,7 +21,7 @@ public class StorageHelper {
         String[] projection = new String[] {
                 MediaStore.Images.Media._ID,
                 MediaStore.Images.Media.BUCKET_DISPLAY_NAME,
-                MediaStore.Images.Media.DATE_TAKEN,
+                MediaStore.Images.Media.DATE_ADDED,
                 MediaStore.Images.Media.DISPLAY_NAME,
                 MediaStore.Images.Media.DATA
         };
@@ -46,7 +46,7 @@ public class StorageHelper {
             String data;
             int bucketColumn = cur.getColumnIndex(MediaStore.Images.Media.BUCKET_DISPLAY_NAME);
 
-            int dateColumn = cur.getColumnIndex(MediaStore.Images.Media.DATE_TAKEN);
+            int dateColumn = cur.getColumnIndex(MediaStore.Images.Media.DATE_ADDED);
 
             int nameColumn = cur.getColumnIndex(MediaStore.Images.Media.DISPLAY_NAME);
 

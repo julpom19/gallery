@@ -20,7 +20,8 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".sections.picture.PictureActivity"/>
+        <activity android:name=".sections.picture.PictureActivity"
+            android:theme="@style/FullScreen"/>
     </application>
 
 </manifest>

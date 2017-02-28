@@ -15,4 +15,19 @@ public class Item {
     public String fileFormat;
     public Image image;
 
+    @Override
+    public String toString() {
+        return "Item{" +
+                "kind='" + kind + '\'' +
+                ", title='" + title + '\'' +
+                ", htmlTitle='" + htmlTitle + '\'' +
+                ", link='" + link + '\'' +
+                ", displayLink='" + displayLink + '\'' +
+                ", snippet='" + snippet + '\'' +
+                ", htmlSnippet='" + htmlSnippet + '\'' +
+                ", mime='" + mime + '\'' +
+                ", fileFormat='" + fileFormat + '\'' +
+                ", image=" + image +
+                '}';
+    }
 }

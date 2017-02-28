@@ -22,6 +22,11 @@ import codewizards.com.ua.gallery.model.net.Item;
 public class InternetImagesAdapter extends RecyclerView.Adapter<InternetImagesAdapter.Holder> {
 
     private List<Item> images;
+    private OnNetImageActionListener listener;
+
+    public InternetImagesAdapter(OnNetImageActionListener listener) {
+        this.listener = listener;
+    }
 
     @Override
     public Holder onCreateViewHolder(ViewGroup parent, int viewType) {
@@ -54,10 +59,15 @@ public class InternetImagesAdapter extends RecyclerView.Adapter<InternetImagesAd
             Item item = images.get(getAdapterPosition());
             tvTitle.setText(item.title);
             Glide.with(ivPic.getContext()).load(item.link).into(ivPic);
+            ivDownload.setOnClickListener(v -> listener.onDownloadButtonClicked(images.get(getAdapterPosition())));
         }
     }
 
     public void updateData(List<Item> images) {
         this.images = new ArrayList<>(images);
+    }
+
+    public interface OnNetImageActionListener {
+        void onDownloadButtonClicked(Item item);
     }
 }
