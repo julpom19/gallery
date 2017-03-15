@@ -1,7 +1,11 @@
 package codewizards.com.ua.gallery.sections.internet;
 
+import android.os.Environment;
+
+import java.io.File;
 import java.io.InputStream;
 import java.util.List;
+import java.util.Locale;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -67,7 +71,15 @@ public class InternetFragmentPresenter extends BasePresenter {
 
                     @Override
                     public void onLoaded(InputStream stream) {
-                        FileHelper.saveFile(stream, fileName);
+                        File dirDownloads = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS);
+                        File file = new File(dirDownloads, fileName);
+                        FileHelper.saveFile(stream, file);
+//                        Intent mediaScanIntent = new Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE);
+//                        File f = new File("file://"+ Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES));
+//                        Uri contentUri = Uri.fromFile(f);
+//                        mediaScanIntent.setData(contentUri);
+//                        view.getActivity().sendBroadcast(mediaScanIntent);
+                        view.onImageLoaded(file.getAbsolutePath());
                         logger.d("File saved!");
                         subscriber.onCompleted();
                     }
@@ -89,7 +101,7 @@ public class InternetFragmentPresenter extends BasePresenter {
                     }
                 })
                 .subscribe(percents -> {
-                    logger.d(String.format("%d%%\n", percents));
+                    logger.d(String.format(Locale.ENGLISH, "%d%%\n", percents));
                     view.onImageLoadingUpdated(percents);
                 },
                 Throwable::printStackTrace,

@@ -1,6 +1,8 @@
 package codewizards.com.ua.gallery.sections.internet;
 
 import android.app.Notification;
+import android.media.MediaScannerConnection;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.NotificationManagerCompat;
@@ -23,6 +25,7 @@ import codewizards.com.ua.gallery.mvp.PresenterCache;
 import codewizards.com.ua.gallery.mvp.PresenterFactory;
 import codewizards.com.ua.gallery.sections.abs.BaseFragment;
 import codewizards.com.ua.gallery.util.Const;
+import codewizards.com.ua.gallery.util.IntentHelper;
 import rx.Observable;
 import rx.Subscriber;
 import rx.android.schedulers.AndroidSchedulers;
@@ -104,6 +107,22 @@ public class InternetFragment extends BaseFragment implements InternetImagesAdap
 
     public void finishLoading() {
         progressBar.setVisibility(View.GONE);
+    }
+
+    @Override
+    public void onImageSelected(Item item) {
+        IntentHelper.openPictureActivity(getActivity(), item.link);
+    }
+
+    public void onImageLoaded(String filePath) {
+        MediaScannerConnection.scanFile(
+                getContext(),
+                new String[]{ filePath },
+                new String[]{ "*/*" },
+                new MediaScannerConnection.MediaScannerConnectionClient() {
+                    public void onMediaScannerConnected() {}
+                    public void onScanCompleted(String path, Uri uri) {}
+                });
     }
 
     @Override

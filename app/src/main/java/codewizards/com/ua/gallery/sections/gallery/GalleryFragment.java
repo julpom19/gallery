@@ -2,6 +2,8 @@ package codewizards.com.ua.gallery.sections.gallery;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v4.content.ContextCompat;
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -12,8 +14,10 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import java.util.List;
+import java.util.TimerTask;
 
 import codewizards.com.ua.gallery.R;
+import codewizards.com.ua.gallery.managers.SoundManager;
 import codewizards.com.ua.gallery.model.ui.GalleryImage;
 import codewizards.com.ua.gallery.mvp.PresenterCache;
 import codewizards.com.ua.gallery.mvp.PresenterFactory;
@@ -26,9 +30,11 @@ import codewizards.com.ua.gallery.util.IntentHelper;
  * Created by Интернет on 19.01.2017.
  */
 
-public class GalleryFragment extends BaseFragment implements OnImageActionListener {
-    private static final String TAG = "GalleryFragment";
+public class GalleryFragment extends BaseFragment implements OnImageActionListener, SwipeRefreshLayout.OnRefreshListener {
+
     private RecyclerView rvImages;
+    private SwipeRefreshLayout swipeToRefresh;
+
     ImageAdapter imageAdapter;
 
     GalleryFragmentPresenter presenter;
@@ -37,8 +43,10 @@ public class GalleryFragment extends BaseFragment implements OnImageActionListen
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        logger.d("onCreateView()");
         View view = inflater.inflate(R.layout.fragment_gallery, container, false);
         rvImages = (RecyclerView) view.findViewById(R.id.rvImages);
+        swipeToRefresh = (SwipeRefreshLayout) view.findViewById(R.id.swipeToRefresh);
         return view;
     }
 
@@ -48,15 +56,29 @@ public class GalleryFragment extends BaseFragment implements OnImageActionListen
         imageAdapter = new ImageAdapter(this);
         rvImages.setAdapter(imageAdapter);
         rvImages.setLayoutManager(new GridLayoutManager(getActivity(), 2));
+        swipeToRefresh.setOnRefreshListener(this);
+        swipeToRefresh.setColorSchemeColors(ContextCompat.getColor(getContext(), R.color.colorAccent));
         presenter = PresenterCache.get().getPresenter(Const.PRESENTER_GALLERY_FRAGMENT, factory);
         presenter.init(this, getActivity());
-        presenter.update();
+        presenter.start();
         setHasOptionsMenu(true);
     }
 
     public void onImagesUpdated(List<GalleryImage> images) {
         imageAdapter.setImageList(images);
         imageAdapter.notifyDataSetChanged();
+        swipeToRefresh.setRefreshing(false);
+    }
+
+    @Override
+    public void onRefresh() {
+        swipeToRefresh.setRefreshing(true);
+        swipeToRefresh.postDelayed(new TimerTask() {
+            @Override
+            public void run() {
+                presenter.update();
+            }
+        }, 200);
     }
 
     @Override
@@ -67,6 +89,7 @@ public class GalleryFragment extends BaseFragment implements OnImageActionListen
     @Override
     public void onImageFavorite(GalleryImage image) {
         presenter.addToFavorite(image);
+        SoundManager.get().playLikeSound();
     }
 
     @Override

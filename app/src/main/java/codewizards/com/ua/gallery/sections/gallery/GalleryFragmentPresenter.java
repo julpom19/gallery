@@ -3,6 +3,7 @@ package codewizards.com.ua.gallery.sections.gallery;
 import android.content.Context;
 
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -30,20 +31,27 @@ public class GalleryFragmentPresenter extends BasePresenter implements DbEventOb
     private Context context;
     private List<GalleryImage> images;
     private DbManager repository = DbManager.get();
+    private Comparator<GalleryImage> comparator = new ImageComparatorByDateReversed();
 
     public void init(GalleryFragment view, Context context) {
+        logger.d("init");
         this.view = view;
         this.context = context;
     }
 
-    public void update() {
-        logger.d("update");
+    public void start() {
         if(images != null) {
+            Collections.sort(images, comparator);
             view.onImagesUpdated(images);
         } else {
             repository.addObserver(this);
             fetchFreshData();
         }
+    }
+
+    public void update() {
+        repository.addObserver(this);
+        fetchFreshData();
     }
 
     public void fetchFreshData() {
@@ -57,26 +65,31 @@ public class GalleryFragmentPresenter extends BasePresenter implements DbEventOb
             logger.d("favorite image: " + image);
             image.setFavorite(true);
         }
+        Collections.sort(images, comparator);
         view.onImagesUpdated(images);
     }
 
     public void sortByDate() {
-        Collections.sort(images, new ImageComparatorByDate());
+        comparator = new ImageComparatorByDate();
+        Collections.sort(images, comparator);
         view.onImagesUpdated(images);
     }
 
     public void sortByName() {
-        Collections.sort(images, new ImageComparatorByName());
+        comparator = new ImageComparatorByName();
+        Collections.sort(images, comparator);
         view.onImagesUpdated(images);
     }
 
     public void sortByDateReversed() {
-        Collections.sort(images, new ImageComparatorByDateReversed());
+        comparator = new ImageComparatorByDateReversed();
+        Collections.sort(images, comparator);
         view.onImagesUpdated(images);
     }
 
     public void sortByNameReversed() {
-        Collections.sort(images, new ImageComparatorByNameReversed());
+        comparator = new ImageComparatorByNameReversed();
+        Collections.sort(images, comparator);
         view.onImagesUpdated(images);
     }
 

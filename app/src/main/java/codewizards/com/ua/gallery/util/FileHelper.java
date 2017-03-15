@@ -1,7 +1,5 @@
 package codewizards.com.ua.gallery.util;
 
-import android.os.Environment;
-
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
 import java.io.File;
@@ -17,11 +15,8 @@ public class FileHelper {
 
     private static Logger logger = Logger.getLogger(FileHelper.class);
 
-    public static void saveFile(InputStream stream, String name) {
+    public static void saveFile(InputStream stream, File file) {
         try {
-            File dirDownloads = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS);
-            File file = new File(dirDownloads, name);
-            logger.d("dirDownloads: " + dirDownloads);
             logger.d("File: " + file.getAbsolutePath());
 //            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(stream));
 //            BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(file));

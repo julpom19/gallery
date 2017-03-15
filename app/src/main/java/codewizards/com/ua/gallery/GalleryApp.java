@@ -1,6 +1,9 @@
 package codewizards.com.ua.gallery;
 
 import android.app.Application;
+import android.content.Context;
+
+import com.facebook.stetho.Stetho;
 
 import io.realm.Realm;
 import io.realm.RealmConfiguration;
@@ -10,10 +13,18 @@ import io.realm.RealmConfiguration;
  */
 
 public class GalleryApp extends Application {
+
+    private static Context context;
+
     @Override
     public void onCreate() {
         super.onCreate();
+        context = getApplicationContext();
+        Stetho.initializeWithDefaults(this);
         RealmConfiguration config = new RealmConfiguration.Builder(this).build();
         Realm.setDefaultConfiguration(config);
+    }
+    public static Context getAppContext() {
+        return context;
     }
 }

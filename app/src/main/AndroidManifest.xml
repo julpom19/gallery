@@ -13,15 +13,23 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".sections.MainActivity">
+
+        <activity android:name=".sections.splash.SplashActivity"
+            android:theme="@style/FullScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
+        <activity android:name=".sections.MainActivity"
+            android:theme="@style/AppThemeNoActionBar"/>
+
         <activity android:name=".sections.picture.PictureActivity"
             android:theme="@style/FullScreen"/>
+
+        <activity android:name=".sections.settings.SettingsActivity"/>
+
     </application>
 
 </manifest>

@@ -18,6 +18,7 @@ import codewizards.com.ua.gallery.sections.abs.BaseFragment;
 import codewizards.com.ua.gallery.sections.gallery.OnImageActionListener;
 import codewizards.com.ua.gallery.sections.ui.ImageAdapter;
 import codewizards.com.ua.gallery.util.Const;
+import codewizards.com.ua.gallery.util.IntentHelper;
 
 /**
  * Created by User on 27.02.2017.
@@ -61,7 +62,7 @@ public class FavoritesFragment extends BaseFragment implements OnImageActionList
 
     @Override
     public void onImageSelected(GalleryImage image) {
-
+        IntentHelper.openPictureActivity(getActivity(), image.getUrl());
     }
 
     @Override

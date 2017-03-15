@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference
+        android:key="app_sound"
+        android:summary="Enable Sound FX"
+        android:title="Sound FX">
+    </CheckBoxPreference>
+    <ListPreference
+        android:entries="@array/entries"
+        android:entryValues="@array/entry_values"
+        android:key="app_theme"
+        android:summary="Select color theme"
+        android:title="Theme">
+    </ListPreference>
+</PreferenceScreen>

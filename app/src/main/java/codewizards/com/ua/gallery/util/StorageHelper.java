@@ -26,10 +26,10 @@ public class StorageHelper {
                 MediaStore.Images.Media.DATA
         };
 
-// content:// style URI for the "primary" external storage volume
+        // content:// style URI for the "primary" external storage volume
         Uri images = MediaStore.Images.Media.EXTERNAL_CONTENT_URI;
 
-// Make the query.
+        // Make the query.
         Cursor cur = context.getContentResolver().query(images,
                 projection, // Which columns to return
                 null,       // Which rows to return (all rows)

@@ -60,6 +60,7 @@ public class InternetImagesAdapter extends RecyclerView.Adapter<InternetImagesAd
             tvTitle.setText(item.title);
             Glide.with(ivPic.getContext()).load(item.link).into(ivPic);
             ivDownload.setOnClickListener(v -> listener.onDownloadButtonClicked(images.get(getAdapterPosition())));
+            itemView.setOnClickListener(v -> listener.onImageSelected(images.get(getAdapterPosition())));
         }
     }
 
@@ -68,6 +69,7 @@ public class InternetImagesAdapter extends RecyclerView.Adapter<InternetImagesAd
     }
 
     public interface OnNetImageActionListener {
+        void onImageSelected(Item item);
         void onDownloadButtonClicked(Item item);
     }
 }

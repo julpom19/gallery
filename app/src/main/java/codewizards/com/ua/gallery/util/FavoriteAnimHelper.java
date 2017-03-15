@@ -19,7 +19,7 @@ public class FavoriteAnimHelper {
             @Override
             public void onAnimationEnd(Animator animation) {
                 super.onAnimationCancel(animation);
-                view.animate().scaleX(1f).scaleY(1f);
+                view.animate().scaleX(1f).scaleY(1f).setListener(null);
             }
         });
     }
@@ -30,7 +30,7 @@ public class FavoriteAnimHelper {
             @Override
             public void onAnimationEnd(Animator animation) {
                 super.onAnimationCancel(animation);
-                view.animate().scaleX(1f).scaleY(1f);
+                view.animate().scaleX(1f).scaleY(1f).setListener(null);
             }
         });
     }
