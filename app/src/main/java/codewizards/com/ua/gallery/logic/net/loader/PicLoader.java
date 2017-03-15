@@ -24,7 +24,7 @@ public class PicLoader {
 
     static Logger logger = Logger.getLogger(PicLoader.class);
 
-    public  void load(String url, ProgressListener listener) {
+    public void load(String url, ProgressListener listener) {
         try {
             Request request = new Request.Builder()
                     .url(url)

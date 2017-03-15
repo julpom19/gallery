@@ -1,11 +1,7 @@
 package codewizards.com.ua.gallery.sections.internet;
 
-import android.app.Notification;
-import android.media.MediaScannerConnection;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v4.app.NotificationManagerCompat;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.text.Editable;
@@ -111,42 +107,12 @@ public class InternetFragment extends BaseFragment implements InternetImagesAdap
 
     @Override
     public void onImageSelected(Item item) {
-        IntentHelper.openPictureActivity(getActivity(), item.link);
-    }
-
-    public void onImageLoaded(String filePath) {
-        MediaScannerConnection.scanFile(
-                getContext(),
-                new String[]{ filePath },
-                new String[]{ "*/*" },
-                new MediaScannerConnection.MediaScannerConnectionClient() {
-                    public void onMediaScannerConnected() {}
-                    public void onScanCompleted(String path, Uri uri) {}
-                });
+        IntentHelper.openPictureActivity(getActivity(), item.getLink());
     }
 
     @Override
     public void onDownloadButtonClicked(Item item) {
-        presenter.loadImage(item);
-    }
-
-    public void onImageLoadingUpdated(int percents) {
-        NotificationManagerCompat manager = NotificationManagerCompat.from(getActivity());
-        Notification notification = new Notification.Builder(getActivity())
-                .setContentTitle("LOADING")
-                .setContentText("loading... " + percents)
-                .setSmallIcon(R.drawable.ic_load)
-                .build();
-        manager.notify(0, notification);
-    }
-
-    public void onImageLoadingFinished() {
-        NotificationManagerCompat manager = NotificationManagerCompat.from(getActivity());
-        Notification notification = new Notification.Builder(getActivity())
-                .setContentTitle("LOADED")
-                .setContentText("success")
-                .setSmallIcon(R.drawable.ic_load)
-                .build();
-        manager.notify(0, notification);
+        IntentHelper.startImageLoaderService(getActivity(), item.getLink());
+//        presenter.loadImage(item);
     }
 }

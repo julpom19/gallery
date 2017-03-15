@@ -27,4 +27,8 @@ public class GalleryApp extends Application {
     public static Context getAppContext() {
         return context;
     }
+
+    public static void setAppTheme(int themeId) {
+        context.setTheme(themeId);
+    }
 }

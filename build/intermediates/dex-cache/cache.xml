@@ -3,309 +3,309 @@
 
     <item
         is-multidex="false"
-        jar="E:\workspace\Android\Gallery\gallery\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\25.0.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="297d4bcf6ed4e747a1bf7d0d094a2d911a8d3a8e">
-        <dex dex="E:\workspace\Android\Gallery\gallery\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-25.0.1_b5574a40e834e06675a8b94949dfa1734061821b.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="E:\workspace\Android\Gallery\gallery\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.0.1\jars\libs\internal_impl-25.0.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="c5b7145fb34779b6639147b8f2f8dd77c0db771b">
-        <dex dex="E:\workspace\Android\Gallery\gallery\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.1_613a1f57fe2c081c3a393e06d7fb5219a15463a3.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="E:\workspace\Android\Gallery\gallery\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.0.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="772bed2d992b67b9d0327f766cc95cd63031dcd3">
-        <dex dex="E:\workspace\Android\Gallery\gallery\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-25.0.1_4cd641ad8960957bf9981d197a228c9039b5062a.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\User\.gradle\caches\modules-2\files-2.1\io.realm\realm-annotations\0.88.2\62142d422aaf1a4619035612aaa396df63bbf974\realm-annotations-0.88.2.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="62142d422aaf1a4619035612aaa396df63bbf974">
-        <dex dex="E:\workspace\Android\Gallery\gallery\app\build\intermediates\pre-dexed\debug\realm-annotations-0.88.2_89d74f704e23cb2f5c70a6f6602370a429c349cf.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\User\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit\retrofit\2.0.0-beta2\880d9e0997b2d1bfc98e0d121ced33ee5d04aac4\retrofit-2.0.0-beta2.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="880d9e0997b2d1bfc98e0d121ced33ee5d04aac4">
-        <dex dex="E:\workspace\Android\Gallery\gallery\app\build\intermediates\pre-dexed\debug\retrofit-2.0.0-beta2_07990fb2a33649730eed6cc1d115c9568b22e784.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="E:\workspace\Android\Gallery\gallery\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.0.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="bc7e99e8d0fc279a05aa91378530f467ad62d443">
-        <dex dex="E:\workspace\Android\Gallery\gallery\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-25.0.1_00c1b42afaf72495658f1077bb15207564fd210b.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="E:\workspace\Android\Gallery\gallery\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.0.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="51eba4a4dd73044f90a9d58dd7ca34adbebfcf4e">
-        <dex dex="E:\workspace\Android\Gallery\gallery\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-25.0.1_5c3b6f79c19e7a30eca7e103d667fdb73f3d00a8.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="E:\workspace\Android\Gallery\gallery\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.0.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="f7ac4b327fdb9e2ee386f5adc46164927658de4b">
-        <dex dex="E:\workspace\Android\Gallery\gallery\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-25.0.1_50bd181f01bef4b4342cd6ca15f8ff5511aad888.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="E:\workspace\Android\Gallery\gallery\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.0.1\jars\libs\internal_impl-25.0.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="c0bd6ffb002a85b5e7cad29f8558d1cc59539679">
-        <dex dex="E:\workspace\Android\Gallery\gallery\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.1_66b03a5874c359a8efedc90d75be0ca35602c5a5.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="E:\workspace\Android\Gallery\gallery\app\build\intermediates\exploded-aar\io.reactivex\rxandroid\1.2.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="5a2386ad9bfff580b206a7fe305cdccd00798159">
-        <dex dex="E:\workspace\Android\Gallery\gallery\app\build\intermediates\pre-dexed\debug\io.reactivex-rxandroid-1.2.1_2b7907d21992dc36cd6e4d90081531421c261244.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\User\.gradle\caches\modules-2\files-2.1\com.github.bumptech.glide\glide\3.7.0\9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4\glide-3.7.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4">
-        <dex dex="E:\workspace\Android\Gallery\gallery\app\build\intermediates\pre-dexed\debug\glide-3.7.0_9f79a10fffeb20d68ec2556dfcbe26f5eb452e5e.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="E:\workspace\Android\Gallery\gallery\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.0.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="26c6eef571592c91f29e56fda0bac73321de0c92">
-        <dex dex="E:\workspace\Android\Gallery\gallery\app\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-25.0.1_eb2b90c79b30bd07c22e467b3bfdeb57297e1c32.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="E:\workspace\Android\Gallery\gallery\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.0.1\jars\libs\internal_impl-25.0.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="3af8cc51ef7088e56f132780da8c0bd858b6a6ad">
-        <dex dex="E:\workspace\Android\Gallery\gallery\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.1_d0133c42c1a8be3c64c8b7d76b10b843a1bb8b09.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="E:\programs\AndroidSdk\extras\android\m2repository\com\android\support\support-annotations\25.0.1\support-annotations-25.0.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="a09194311f8f89c3e6db09d79f50897a889d615e">
-        <dex dex="E:\workspace\Android\Gallery\gallery\app\build\intermediates\pre-dexed\debug\support-annotations-25.0.1_7028dd513ccc33327784023451a40b1a0c782f01.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="E:\workspace\Android\Gallery\gallery\app\build\intermediates\exploded-aar\io.realm\realm-android-library\0.88.2\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="43ae35fb2ebd6bac5b6fb4d041c94a35a34dbfc0">
-        <dex dex="E:\workspace\Android\Gallery\gallery\app\build\intermediates\pre-dexed\debug\io.realm-realm-android-library-0.88.2_5a5523d3d5abe5ed3a8d3d643e9705d876c2a21e.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="E:\workspace\Android\Gallery\gallery\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.0.1\jars\libs\internal_impl-25.0.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
-        <dex dex="E:\workspace\Android\Gallery\gallery\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.1_01e3c9d5778f5a7b1f5c962c1f37a4eda605f472.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\User\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit\adapter-rxjava\2.0.0-beta2\3a233746381a03dbb0f5f3ed10b11c3e72dba499\adapter-rxjava-2.0.0-beta2.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="3a233746381a03dbb0f5f3ed10b11c3e72dba499">
-        <dex dex="E:\workspace\Android\Gallery\gallery\app\build\intermediates\pre-dexed\debug\adapter-rxjava-2.0.0-beta2_1c430adb73744f7d9110e28bb57c61aa4bb3c762.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="E:\workspace\Android\Gallery\gallery\app\build\intermediates\exploded-aar\com.android.support\design\25.0.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="3b236883e0df6002cabb01ce57d00a5b1e5de610">
-        <dex dex="E:\workspace\Android\Gallery\gallery\app\build\intermediates\pre-dexed\debug\com.android.support-design-25.0.1_28075913bf5687209e7f41582bdfec6837716728.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\User\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.3.1\ecb6e1f8e4b0e84c4b886c2f14a1500caf309757\gson-2.3.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="ecb6e1f8e4b0e84c4b886c2f14a1500caf309757">
-        <dex dex="E:\workspace\Android\Gallery\gallery\app\build\intermediates\pre-dexed\debug\gson-2.3.1_4cd83f43446c853bb73869015ce0aa3df29c939d.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="E:\workspace\Android\Gallery\gallery\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.0.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="00d4c8eebf2b681073c72a26bd0849549e51c7cb">
-        <dex dex="E:\workspace\Android\Gallery\gallery\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-25.0.1_9c87ea2905d6e86941e3d9500bb6f5f950a46e75.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="E:\workspace\Android\Gallery\gallery\app\build\intermediates\exploded-aar\com.android.support\transition\25.0.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="c1b6ab157e8e12cb08b9ee82bb5e3c5d22632eb3">
-        <dex dex="E:\workspace\Android\Gallery\gallery\app\build\intermediates\pre-dexed\debug\com.android.support-transition-25.0.1_cb2a70f5824a7ce870cd6ebcc5220bc46b74e182.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\User\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.6.0\98476622f10715998eacf9240d6b479f12c66143\okio-1.6.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="98476622f10715998eacf9240d6b479f12c66143">
-        <dex dex="E:\workspace\Android\Gallery\gallery\app\build\intermediates\pre-dexed\debug\okio-1.6.0_c6c36c9266a53bff725e5087f6a3090b1d0ab593.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\User\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp\okhttp\2.5.0\4de2b4ed3445c37ec1720a7d214712e845a24636\okhttp-2.5.0.jar"
+        jar="C:\Users\dmikhov\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp\okhttp\2.5.0\4de2b4ed3445c37ec1720a7d214712e845a24636\okhttp-2.5.0.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
         sha1="4de2b4ed3445c37ec1720a7d214712e845a24636">
-        <dex dex="E:\workspace\Android\Gallery\gallery\app\build\intermediates\pre-dexed\debug\okhttp-2.5.0_683323dfc2c868ac148e8c752980d50c3c18064d.jar" />
+        <dex dex="D:\_BACKUP\Projects\Android\gallery\app\build\intermediates\pre-dexed\debug\okhttp-2.5.0_2a588d723c8d3efaffd242e5b435a252a17fb7da.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\User\.gradle\caches\modules-2\files-2.1\commons-cli\commons-cli\1.2\2bf96b7aa8b611c177d329452af1dc933e14501c\commons-cli-1.2.jar"
+        jar="D:\_BACKUP\Projects\Android\gallery\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.0.1\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
-        sha1="2bf96b7aa8b611c177d329452af1dc933e14501c">
-        <dex dex="E:\workspace\Android\Gallery\gallery\app\build\intermediates\pre-dexed\debug\commons-cli-1.2_44b38b850069f5633e8f7f5b334ee927c04b1d7f.jar" />
+        sha1="51eba4a4dd73044f90a9d58dd7ca34adbebfcf4e">
+        <dex dex="D:\_BACKUP\Projects\Android\gallery\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-25.0.1_5a403bf7280305004e82ac454ac3e5da036bbb9d.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\User\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit\converter-gson\2.0.0-beta2\392c3d09e0f5e7087544093cc0cb23bb9c7af5fa\converter-gson-2.0.0-beta2.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="392c3d09e0f5e7087544093cc0cb23bb9c7af5fa">
-        <dex dex="E:\workspace\Android\Gallery\gallery\app\build\intermediates\pre-dexed\debug\converter-gson-2.0.0-beta2_761428e6e4d62bec577f8d769133ea18ff21c8ba.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="E:\workspace\Android\Gallery\gallery\app\build\intermediates\exploded-aar\com.jakewharton.rxbinding\rxbinding\0.4.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="ffc09f4e5bdebe068e5101f587dadc42b60fbfe4">
-        <dex dex="E:\workspace\Android\Gallery\gallery\app\build\intermediates\pre-dexed\debug\com.jakewharton.rxbinding-rxbinding-0.4.0_a1e201b87db750cf5c353b5209a433efee3fa0e1.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="E:\workspace\Android\Gallery\gallery\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.0.1\jars\classes.jar"
+        jar="D:\_BACKUP\Projects\Android\gallery\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.0.1\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
         sha1="6a1479afe9f1b3645e1cd9a87318976893472818">
-        <dex dex="E:\workspace\Android\Gallery\gallery\app\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-25.0.1_c32dd61d71abcedb9b936645467f8303e8e313df.jar" />
+        <dex dex="D:\_BACKUP\Projects\Android\gallery\app\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-25.0.1_a318bc71a66331091465d53caefe51011491ecce.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="E:\workspace\Android\Gallery\gallery\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\25.0.1\jars\classes.jar"
+        jar="C:\Users\dmikhov\.gradle\caches\modules-2\files-2.1\com.github.bumptech.glide\glide\3.7.0\9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4\glide-3.7.0.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
-        sha1="1108575c7dc7b7f5b378b3290ac90de81a9b8830">
-        <dex dex="E:\workspace\Android\Gallery\gallery\app\build\intermediates\pre-dexed\debug\com.android.support-cardview-v7-25.0.1_23c330ca3ed49f8d0c0c6c727306d13543e7c424.jar" />
+        sha1="9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4">
+        <dex dex="D:\_BACKUP\Projects\Android\gallery\app\build\intermediates\pre-dexed\debug\glide-3.7.0_632fca9b7e21236d4d374f66dec70a7094399c2d.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="E:\workspace\Android\Gallery\gallery\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.0.1\jars\classes.jar"
+        jar="D:\_BACKUP\Projects\Android\gallery\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.0.1\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
         sha1="b24e1c688744078e1fa833ffadf696794761bbe5">
-        <dex dex="E:\workspace\Android\Gallery\gallery\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-25.0.1_d1e11b88f62eec786f0fc548ff86631a185641ec.jar" />
+        <dex dex="D:\_BACKUP\Projects\Android\gallery\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-25.0.1_d292dd7134652077066900df9b77184d7d2f8913.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="E:\workspace\Android\Gallery\gallery\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.0.1\jars\classes.jar"
+        jar="D:\_BACKUP\Projects\Android\gallery\app\build\intermediates\exploded-aar\com.android.support\transition\25.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c1b6ab157e8e12cb08b9ee82bb5e3c5d22632eb3">
+        <dex dex="D:\_BACKUP\Projects\Android\gallery\app\build\intermediates\pre-dexed\debug\com.android.support-transition-25.0.1_61dd9042755cce262953f458239930d7a30201bd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\_BACKUP\Projects\Android\gallery\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.0.1\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
         sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="E:\workspace\Android\Gallery\gallery\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-25.0.1_e9a35bba563b442879f7ba0b1782e00941a353c4.jar" />
+        <dex dex="D:\_BACKUP\Projects\Android\gallery\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-25.0.1_6169eb55dcd047aa052fd8406be3f6bd6a561333.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="E:\workspace\Android\Gallery\gallery\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.0.1\jars\libs\internal_impl-25.0.1.jar"
+        jar="C:\Users\dmikhov\.gradle\caches\modules-2\files-2.1\io.realm\realm-annotations\0.88.2\62142d422aaf1a4619035612aaa396df63bbf974\realm-annotations-0.88.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="62142d422aaf1a4619035612aaa396df63bbf974">
+        <dex dex="D:\_BACKUP\Projects\Android\gallery\app\build\intermediates\pre-dexed\debug\realm-annotations-0.88.2_41e119c911949688a116fc9bcf114aa17983a1bb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\_BACKUP\Projects\Android\gallery\app\build\intermediates\exploded-aar\io.reactivex\rxandroid\1.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5a2386ad9bfff580b206a7fe305cdccd00798159">
+        <dex dex="D:\_BACKUP\Projects\Android\gallery\app\build\intermediates\pre-dexed\debug\io.reactivex-rxandroid-1.2.1_d7f5b74c5355c5a5781815ce7d466ebcfb1bf0c7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\_BACKUP\Projects\Android\gallery\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.0.1\jars\libs\internal_impl-25.0.1.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
         sha1="f83b00041ecfba705603fec40363416c7de69719">
-        <dex dex="E:\workspace\Android\Gallery\gallery\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.1_8b2eeb5bed3fc2550cb02076b113ea427775e0ec.jar" />
+        <dex dex="D:\_BACKUP\Projects\Android\gallery\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.1_7a3774b756df7ba88af12bd87849b9af16d970d6.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="E:\workspace\Android\Gallery\gallery\app\build\intermediates\exploded-aar\com.facebook.stetho\stetho\1.4.2\jars\classes.jar"
+        jar="C:\Users\dmikhov\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit\adapter-rxjava\2.0.0-beta2\3a233746381a03dbb0f5f3ed10b11c3e72dba499\adapter-rxjava-2.0.0-beta2.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
-        sha1="32f45bd44a3e7efc235bbfed120029290f5d674a">
-        <dex dex="E:\workspace\Android\Gallery\gallery\app\build\intermediates\pre-dexed\debug\com.facebook.stetho-stetho-1.4.2_5ef2dca1af3fe93785e01fc27f6e90810c698e37.jar" />
+        sha1="3a233746381a03dbb0f5f3ed10b11c3e72dba499">
+        <dex dex="D:\_BACKUP\Projects\Android\gallery\app\build\intermediates\pre-dexed\debug\adapter-rxjava-2.0.0-beta2_7d959e7dc326e7d2f79cbda0b80276784f2aeff2.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\User\.gradle\caches\modules-2\files-2.1\com.google.code.findbugs\jsr305\2.0.1\516c03b21d50a644d538de0f0369c620989cd8f0\jsr305-2.0.1.jar"
+        jar="D:\_BACKUP\Projects\Android\gallery\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.0.1\jars\libs\internal_impl-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3af8cc51ef7088e56f132780da8c0bd858b6a6ad">
+        <dex dex="D:\_BACKUP\Projects\Android\gallery\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.1_ddb2a272b9d635ea6d6e1208a04d07516a01edb3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\_BACKUP\Projects\Android\gallery\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="772bed2d992b67b9d0327f766cc95cd63031dcd3">
+        <dex dex="D:\_BACKUP\Projects\Android\gallery\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-25.0.1_36fa6e3b6fec77d258fd966cdd14879d86366754.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\dmikhov\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit\retrofit\2.0.0-beta2\880d9e0997b2d1bfc98e0d121ced33ee5d04aac4\retrofit-2.0.0-beta2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="880d9e0997b2d1bfc98e0d121ced33ee5d04aac4">
+        <dex dex="D:\_BACKUP\Projects\Android\gallery\app\build\intermediates\pre-dexed\debug\retrofit-2.0.0-beta2_db2d6f1e2dc0974bb73c1210d896b8f593f813db.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\dmikhov\.gradle\caches\modules-2\files-2.1\commons-cli\commons-cli\1.2\2bf96b7aa8b611c177d329452af1dc933e14501c\commons-cli-1.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="2bf96b7aa8b611c177d329452af1dc933e14501c">
+        <dex dex="D:\_BACKUP\Projects\Android\gallery\app\build\intermediates\pre-dexed\debug\commons-cli-1.2_8aac2b38ad62c2b89967a00d669a5944284d9310.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\_BACKUP\Projects\Android\gallery\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="bc7e99e8d0fc279a05aa91378530f467ad62d443">
+        <dex dex="D:\_BACKUP\Projects\Android\gallery\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-25.0.1_37a2d175396a584baa9436481a87a50e7a49f0d6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\_BACKUP\Projects\Android\gallery\app\build\intermediates\exploded-aar\com.jakewharton.rxbinding\rxbinding\0.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ffc09f4e5bdebe068e5101f587dadc42b60fbfe4">
+        <dex dex="D:\_BACKUP\Projects\Android\gallery\app\build\intermediates\pre-dexed\debug\com.jakewharton.rxbinding-rxbinding-0.4.0_6bfa6ac74534716dc4446cf0ae7789adec1d39ca.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\dmikhov\.gradle\caches\modules-2\files-2.1\com.google.code.findbugs\jsr305\2.0.1\516c03b21d50a644d538de0f0369c620989cd8f0\jsr305-2.0.1.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
         sha1="516c03b21d50a644d538de0f0369c620989cd8f0">
-        <dex dex="E:\workspace\Android\Gallery\gallery\app\build\intermediates\pre-dexed\debug\jsr305-2.0.1_da47f4fe6fd0ff761eb82532e5e11c601a8158c6.jar" />
+        <dex dex="D:\_BACKUP\Projects\Android\gallery\app\build\intermediates\pre-dexed\debug\jsr305-2.0.1_0368a348d0682aa8fc8159dca811333702974722.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\User\.gradle\caches\modules-2\files-2.1\io.reactivex\rxjava\1.1.7\45aaffc3cf6fa7c9b9eed6121369cad25789cf4a\rxjava-1.1.7.jar"
+        jar="D:\_BACKUP\Projects\Android\gallery\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.0.1\jars\libs\internal_impl-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c5b7145fb34779b6639147b8f2f8dd77c0db771b">
+        <dex dex="D:\_BACKUP\Projects\Android\gallery\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.1_402f01f0bd53e3410725dbef6db19b92c721f967.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\dmikhov\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit\converter-gson\2.0.0-beta2\392c3d09e0f5e7087544093cc0cb23bb9c7af5fa\converter-gson-2.0.0-beta2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="392c3d09e0f5e7087544093cc0cb23bb9c7af5fa">
+        <dex dex="D:\_BACKUP\Projects\Android\gallery\app\build\intermediates\pre-dexed\debug\converter-gson-2.0.0-beta2_335bb9f68799af6180e4481e2664ec631b380285.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\_BACKUP\Projects\Android\gallery\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="26c6eef571592c91f29e56fda0bac73321de0c92">
+        <dex dex="D:\_BACKUP\Projects\Android\gallery\app\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-25.0.1_99baa4b2101479fedeeff51f5ac1b9ddef55315f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\_BACKUP\Projects\Android\gallery\app\build\intermediates\exploded-aar\com.android.support\design\25.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3b236883e0df6002cabb01ce57d00a5b1e5de610">
+        <dex dex="D:\_BACKUP\Projects\Android\gallery\app\build\intermediates\pre-dexed\debug\com.android.support-design-25.0.1_a4aa7ff795fd1ab733fb4dc2e3e9ee53f340e8fa.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\_BACKUP\Projects\Android\gallery\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.0.1\jars\libs\internal_impl-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c0bd6ffb002a85b5e7cad29f8558d1cc59539679">
+        <dex dex="D:\_BACKUP\Projects\Android\gallery\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.1_b304c795fceaa7d37e6ce431c26289eb9e150128.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\_BACKUP\Projects\Android\gallery\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\25.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1108575c7dc7b7f5b378b3290ac90de81a9b8830">
+        <dex dex="D:\_BACKUP\Projects\Android\gallery\app\build\intermediates\pre-dexed\debug\com.android.support-cardview-v7-25.0.1_910409be25118be8a945e49d8ed43cba0948e2be.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\dmikhov\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.3.1\ecb6e1f8e4b0e84c4b886c2f14a1500caf309757\gson-2.3.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ecb6e1f8e4b0e84c4b886c2f14a1500caf309757">
+        <dex dex="D:\_BACKUP\Projects\Android\gallery\app\build\intermediates\pre-dexed\debug\gson-2.3.1_17005e7a01d423c205e7f5d1bf6f26dae5a04c57.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\AndroidSdk\extras\android\m2repository\com\android\support\support-annotations\25.0.1\support-annotations-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a09194311f8f89c3e6db09d79f50897a889d615e">
+        <dex dex="D:\_BACKUP\Projects\Android\gallery\app\build\intermediates\pre-dexed\debug\support-annotations-25.0.1_33d7ffe962b6c50ee14c4d7d0de55fc5bb9e0d47.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\_BACKUP\Projects\Android\gallery\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\25.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="297d4bcf6ed4e747a1bf7d0d094a2d911a8d3a8e">
+        <dex dex="D:\_BACKUP\Projects\Android\gallery\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-25.0.1_be5b113760932c1a732e22d621355ba42364edbd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\_BACKUP\Projects\Android\gallery\app\build\intermediates\exploded-aar\io.realm\realm-android-library\0.88.2\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="43ae35fb2ebd6bac5b6fb4d041c94a35a34dbfc0">
+        <dex dex="D:\_BACKUP\Projects\Android\gallery\app\build\intermediates\pre-dexed\debug\io.realm-realm-android-library-0.88.2_adc710e1ca6677213a397e2ef4b337e8861802c0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\_BACKUP\Projects\Android\gallery\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="00d4c8eebf2b681073c72a26bd0849549e51c7cb">
+        <dex dex="D:\_BACKUP\Projects\Android\gallery\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-25.0.1_be189b893aec95d7f7fb4a6e0f3e72d16ba57a6a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\_BACKUP\Projects\Android\gallery\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f7ac4b327fdb9e2ee386f5adc46164927658de4b">
+        <dex dex="D:\_BACKUP\Projects\Android\gallery\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-25.0.1_3ff9ce810a452d9b130bd464ce6178d13c49fb23.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\_BACKUP\Projects\Android\gallery\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.0.1\jars\libs\internal_impl-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
+        <dex dex="D:\_BACKUP\Projects\Android\gallery\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.1_2992e426694d8713913c604784d7172791a2c3c2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\dmikhov\.gradle\caches\modules-2\files-2.1\io.reactivex\rxjava\1.1.7\45aaffc3cf6fa7c9b9eed6121369cad25789cf4a\rxjava-1.1.7.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
         sha1="45aaffc3cf6fa7c9b9eed6121369cad25789cf4a">
-        <dex dex="E:\workspace\Android\Gallery\gallery\app\build\intermediates\pre-dexed\debug\rxjava-1.1.7_0c1fc61300a4784917eb5d6dc95d60d222bc5fdc.jar" />
+        <dex dex="D:\_BACKUP\Projects\Android\gallery\app\build\intermediates\pre-dexed\debug\rxjava-1.1.7_3db83492fa18af75d826dbd9a49eec93245427c6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\dmikhov\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.6.0\98476622f10715998eacf9240d6b479f12c66143\okio-1.6.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="98476622f10715998eacf9240d6b479f12c66143">
+        <dex dex="D:\_BACKUP\Projects\Android\gallery\app\build\intermediates\pre-dexed\debug\okio-1.6.0_520fde47d664a45adafa45e9672b4b09e1da6fc1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\_BACKUP\Projects\Android\gallery\app\build\intermediates\exploded-aar\com.facebook.stetho\stetho\1.4.2\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="32f45bd44a3e7efc235bbfed120029290f5d674a">
+        <dex dex="D:\_BACKUP\Projects\Android\gallery\app\build\intermediates\pre-dexed\debug\com.facebook.stetho-stetho-1.4.2_892abf8d6afed7609864726186f32bb47660f7ae.jar" />
     </item>
 
 </items>

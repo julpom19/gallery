@@ -14,7 +14,9 @@ import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.widget.FrameLayout;
 
+import codewizards.com.ua.gallery.GalleryApp;
 import codewizards.com.ua.gallery.R;
+import codewizards.com.ua.gallery.managers.PreferencesManager;
 import codewizards.com.ua.gallery.sections.abs.BaseActivity;
 import codewizards.com.ua.gallery.sections.images.ImagesFragment;
 import codewizards.com.ua.gallery.sections.photo.PhotoFragment;
@@ -30,10 +32,12 @@ public class MainActivity extends BaseActivity {
     Toolbar toolbar;
 
     ActionBarDrawerToggle drawerToggle;
+    ImagesFragment fragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        processAppThemeChanging();
         setContentView(R.layout.activity_main);
         container = (FrameLayout) findViewById(R.id.container);
         drawerLayout = (DrawerLayout) findViewById(R.id.drawerLayout);
@@ -46,9 +50,14 @@ public class MainActivity extends BaseActivity {
         checkPermissions();
     }
 
+    @Override
+    protected void onStart() {
+        super.onStart();
+    }
+
     public void init() {
         ImagesFragment fragment = new ImagesFragment();
-        getSupportFragmentManager().beginTransaction().add(R.id.container, fragment).commit();
+        getSupportFragmentManager().beginTransaction().add(R.id.container, fragment).commitAllowingStateLoss();
     }
 
     private void initToolbar() {
@@ -130,6 +139,23 @@ public class MainActivity extends BaseActivity {
                     checkPermissions();
                 }
             }
+        }
+    }
+
+    @Override
+    public void processAppThemeChanging() {
+        String blue = GalleryApp.getAppContext().getString(R.string.settings_theme_value_blue);
+        String green= GalleryApp.getAppContext().getString(R.string.settings_theme_value_green);
+        String yellow = GalleryApp.getAppContext().getString(R.string.settings_theme_value_yellow);
+        String s = PreferencesManager.getAppTheme();
+        if (s.equals(blue)) {
+            setTheme(R.style.AppThemeNoActionBarBlue);
+        } else if (s.equals(green)) {
+            setTheme(R.style.AppThemeNoActionBarGreen);
+        } else if (s.equals(yellow)) {
+            setTheme(R.style.AppThemeNoActionBarYellow);
+        } else {
+            setTheme(R.style.AppThemeNoActionBarBlue);
         }
     }
 }

@@ -2,4 +2,33 @@
     <string name="app_name">Gallery</string>
     <string name="drawer_open">Open</string>
     <string name="drawer_close">Close</string>
+
+    <string name="dialog_ok">Ok</string>
+    <string name="dialog_cancel">Cancel</string>
+
+    <string name="tab_gallery">Gallery</string>
+    <string name="tab_favorites">Favorites</string>
+    <string name="tab_google">Google</string>
+
+    <string name="service_loading_title">Loading</string>
+    <string name="service_loading_in_progress">Loaded: %d%%</string>
+    <string name="service_loading_finished">Loading finished</string>
+    <string name="service_loading_finished_successfully">Loading finished successfully!</string>
+
+    <string name="photo_no_photo">Click on button to take a photo</string>
+
+    <string name="settings_sound_enabled">Sound FX enabled</string>
+    <string name="settings_sound_disabled">Sound FX disabled</string>
+    <string name="settings_sound_title">Sound FX</string>
+    <string name="settings_theme_title">Theme</string>
+    <string name="settings_theme_summary">Select color theme</string>
+    <string name="settings_theme_blue">Blue</string>
+    <string name="settings_theme_green">Green</string>
+    <string name="settings_theme_yellow">Yellow</string>
+    <string name="settings_theme_value_blue" translatable="false">blue</string>
+    <string name="settings_theme_value_green" translatable="false">green</string>
+    <string name="settings_theme_value_yellow" translatable="false">yellow</string>
+    <string name="settings_theme_changing_title">Theme changing</string>
+    <string name="settings_theme_changing_msg">To apply new theme you need to restart application. Restart?</string>
+    <string name="settings_theme_changing_restart">Restart</string>
 </resources>

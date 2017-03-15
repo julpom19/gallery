@@ -6,16 +6,18 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.INTERNET"/>
 
+    <uses-feature android:name="android.hardware.camera"/>
+
     <application
         android:name=".GalleryApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppThemeBlue">
 
         <activity android:name=".sections.splash.SplashActivity"
-            android:theme="@style/FullScreen">
+            android:theme="@style/FullScreenBlue">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -23,12 +25,14 @@
         </activity>
 
         <activity android:name=".sections.MainActivity"
-            android:theme="@style/AppThemeNoActionBar"/>
+            android:theme="@style/AppThemeNoActionBarGreen"/>
 
         <activity android:name=".sections.picture.PictureActivity"
-            android:theme="@style/FullScreen"/>
+            android:theme="@style/FullScreenBlue"/>
 
         <activity android:name=".sections.settings.SettingsActivity"/>
+
+        <service android:name=".logic.net.loader.ImageLoaderService"/>
 
     </application>
 

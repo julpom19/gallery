@@ -57,7 +57,7 @@ public class GalleryFragment extends BaseFragment implements OnImageActionListen
         rvImages.setAdapter(imageAdapter);
         rvImages.setLayoutManager(new GridLayoutManager(getActivity(), 2));
         swipeToRefresh.setOnRefreshListener(this);
-        swipeToRefresh.setColorSchemeColors(ContextCompat.getColor(getContext(), R.color.colorAccent));
+        swipeToRefresh.setColorSchemeColors(ContextCompat.getColor(getContext(), R.color.colorAccentBlue));
         presenter = PresenterCache.get().getPresenter(Const.PRESENTER_GALLERY_FRAGMENT, factory);
         presenter.init(this, getActivity());
         presenter.start();

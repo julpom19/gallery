@@ -8,6 +8,8 @@ import codewizards.com.ua.gallery.util.Logger;
  * Created by User on 15.03.2017.
  */
 
-public class BaseActivity extends AppCompatActivity {
+public abstract class BaseActivity extends AppCompatActivity {
     Logger logger = Logger.getLogger(this.getClass());
+
+    public abstract void processAppThemeChanging();
 }

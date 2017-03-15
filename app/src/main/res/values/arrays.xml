@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="entries">
-        <item>Dark blue</item>
-        <item>Light green</item>
-        <item>Dark red</item>
+        <item>@string/settings_theme_blue</item>
+        <item>@string/settings_theme_green</item>
+        <item>@string/settings_theme_yellow</item>
     </string-array>
     <string-array name="entry_values">
-        <item>blue</item>
-        <item>green</item>
-        <item>red</item>
+        <item>@string/settings_theme_value_blue</item>
+        <item>@string/settings_theme_value_green</item>
+        <item>@string/settings_theme_value_yellow</item>
     </string-array>
 </resources>

@@ -57,8 +57,8 @@ public class InternetImagesAdapter extends RecyclerView.Adapter<InternetImagesAd
         }
         public void init() {
             Item item = images.get(getAdapterPosition());
-            tvTitle.setText(item.title);
-            Glide.with(ivPic.getContext()).load(item.link).into(ivPic);
+            tvTitle.setText(item.getTitle());
+            Glide.with(ivPic.getContext()).load(item.getLink()).into(ivPic);
             ivDownload.setOnClickListener(v -> listener.onDownloadButtonClicked(images.get(getAdapterPosition())));
             itemView.setOnClickListener(v -> listener.onImageSelected(images.get(getAdapterPosition())));
         }
