@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:id="@+id/navigation_item_images" android:title="Images"/>
-    <item android:id="@+id/navigation_item_photo" android:title="Take photo"/>
-    <item android:id="@+id/navigation_item_settings" android:title="Settings"/>
-    <item android:id="@+id/navigation_item_exit" android:title="Exit"/>
+    <item android:id="@+id/navigation_item_images"
+        android:title="@string/nav_item_gallery"
+        android:icon="@drawable/ic_gallery_white"/>
+    <item android:id="@+id/navigation_item_photo"
+        android:title="@string/nav_item_photo"
+        android:icon="@drawable/ic_camera_white"/>
+    <item android:id="@+id/navigation_item_settings"
+        android:title="@string/nav_item_settings"
+        android:icon="@drawable/ic_settings"/>
+    <item android:id="@+id/navigation_item_exit"
+        android:title="@string/nav_item_exit"
+        android:icon="@drawable/ic_exit"/>
 </menu>
